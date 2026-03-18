@@ -44,4 +44,9 @@ package src{
     +main(String[]args)
     }
 }
+
+Box *-- "3" Rueda
+    Box --* TragamonedasImpl
+    TragamonedasImpl ..|> Tragamonedas
+    TragamonedasImpl <-- TheMain
 @enduml
