@@ -1,0 +1,47 @@
+@startuml
+package src{
+    package model{
+        class Box{
+            -numero_ruedas : int
+            -ruedas : List<Rueda>
+            +Box()
+            +realizarApuesta(int valorApuesta) : init
+            -girarRueda()
+            -getPremio(int apuesta) : int
+            -isValorRuedasIgualDistintoDeCero() : Boolean
+            +getRuedasValues() : List<character>
+        }
+
+        class Rueda{
+            -random : int
+            -max_values : int
+            -valor : int
+            +Rueda()
+            +girarAlAzar()
+            +getValor() : int
+            +getChar() : char
+        }
+    }
+
+    package services{
+        class Tragamonedas{
+            +RealizarApuesta(int apuesta) : int
+            +getRuedasValues() : List<character>
+            +getSaldo() : int
+        }
+
+        class TragamonedasImpl{
+        -Box : Box
+        -Saldo : int
+        +TragamonedasImpl(int saldo)
+        +realizarApuesta(int apuesta) : int
+        +getRuedasValues() : List<character>
+        +getSaldo() : int
+        }
+    }
+
+    class TheMain{
+    +main(String[]args)
+    }
+}
+@enduml
