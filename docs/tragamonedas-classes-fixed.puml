@@ -5,7 +5,8 @@ package src{
             -numero_ruedas : int
             -ruedas : List<Rueda>
             +Box()
-            -girarRueda()
+            +girarRueda()
+            +getRuedas() : List<Rueda>
             +getRuedasValues() : List<character>
         }
 
