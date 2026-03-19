@@ -28,7 +28,7 @@ package src{
         }
 
         class TragamonedasImpl{
-        -Box : Box
+        -Box : box
         -Saldo : int
         +TragamonedasImpl(int saldo)
         +realizarApuesta(int apuesta) : int
