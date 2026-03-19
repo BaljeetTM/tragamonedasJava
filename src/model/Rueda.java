@@ -2,7 +2,7 @@ package model;
 
 import java.util.Random;
 
-public class Rueda {
+public final class Rueda {
     private static final Random RANDOM = new Random();
 
     private static final int MAX_VALUE = 10;
